@@ -26,7 +26,7 @@
     
     <a class="navbar-brand me-2" href="index.html">ggpicrust2</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.6.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.6.2</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,6 +96,7 @@
 <p>If you use <em>ggpicrust2</em> in your research, please cite the following paper:</p>
 <p>Chen Yang, Aaron Burberry, Xuan Cao, Jiahao Mai, Liangliang Zhang. (2023). <a href="https://arxiv.org/abs/2303.10388" class="external-link">ggpicrust2: an R package for PICRUSt2 predicted functional profile analysis and visualization.</a> arXiv preprint arXiv:2303.10388.</p>
 <p>BibTeX entry: @misc{yang2023ggpicrust2, title={ggpicrust2: an R package for PICRUSt2 predicted functional profile analysis and visualization}, author={Chen Yang and Aaron Burberry and Jiahao Mai and Xuan Cao and Liangliang Zhang}, year={2023}, eprint={2303.10388}, archivePrefix={arXiv}, primaryClass={stat.AP} }</p>
+<p>ResearchGate preprint link: <a href="https://www.researchgate.net/publication/369380349_ggpicrust2_an_R_package_for_PICRUSt2_predicted_functional_profile_analysis_and_visualization" class="external-link">Click here</a></p>
 </div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
@@ -510,11 +511,18 @@
 <p>If you are in China, make sure your computer network can bypass the firewall.</p>
 </div>
 <div class="section level3">
-<h3 id="issue-3-bad-request-http-400">Issue 3: Bad Request (HTTP 400)<a class="anchor" aria-label="anchor" href="#issue-3-bad-request-http-400"></a>
+<h3 id="issue-4-bad-request-http-400">Issue 4: Bad Request (HTTP 400)<a class="anchor" aria-label="anchor" href="#issue-4-bad-request-http-400"></a>
 </h3>
 <p>When encountering the following error:</p>
 <div class="sourceCode" id="cb21"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>Error <span class="cf">in</span> <span class="fu">.getUrl</span>(url, .flatFileParser) <span class="sc">:</span> Bad <span class="fu">Request</span> (HTTP <span class="dv">400</span>).</span></code></pre></div>
 <p>Please restart R session.</p>
+</div>
+<div class="section level3">
+<h3 id="issue-5-error-in-gridcallc_textbounds-asgraphicsannotxlabelxx-xy-">Issue 5: Error in grid.Call(C_textBounds, as.graphicsAnnot(xlabel),x<span class="math inline"><em>x</em>, <em>x</em></span>y, :<a class="anchor" aria-label="anchor" href="#issue-5-error-in-gridcallc_textbounds-asgraphicsannotxlabelxx-xy-"></a>
+</h3>
+<p>When encountering the following error:</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>Error <span class="cf">in</span> <span class="fu">grid.Call</span>(C_textBounds, <span class="fu">as.graphicsAnnot</span>(xlabel),x<span class="sc">$</span>x, x<span class="sc">$</span>y, <span class="sc">:</span></span></code></pre></div>
+<p>Please having some required fonts installed. You can refer to this <a href="https://stackoverflow.com/questions/71362738/r-error-in-grid-callc-textbounds-as-graphicsannotxlabel-xx-xy-polygo" class="external-link">thread</a>.</p>
 </div>
 </div>
 <div class="section level2">
